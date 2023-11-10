@@ -23,7 +23,7 @@ function Get-IPsFromFile {
         # Parameter help description
         [Parameter(Mandatory)]
         [ValidateScript({Test-Path $_})]
-        [System.String]$Path,
+        [System.String[]]$Path,
         [Parameter()]
         [ValidateScript({[System.Text.RegularExpressions.Regex]::Match($_, "\d{1,3}(\.\d{1,3}){3}").Success})]
         [System.String[]]$IgnoreIP,
