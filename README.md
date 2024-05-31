@@ -3,6 +3,7 @@ My workflow for configuring my PowerShell environment.
 
 ## Application Installs
 1. [Windows Terminal](https://github.com/microsoft/terminal) (admin & user accounts)
+2. [WinGet](https://learn.microsoft.com/en-us/windows/package-manager/winget/)
 ```
 $progressPreference = 'silentlyContinue'
 Write-Information "Downloading WinGet and its dependencies..."
@@ -20,6 +21,8 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object
 ```
 6. [SysInternals](https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite) 
 7. [VS Code](https://code.visualstudio.com/download)
+8. [PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/install)
+9. [RSAT](https://www.microsoft.com/en-us/download/details.aspx?id=45520)
 
 ## Configurations
 1. Create `C:\HOME` directory
@@ -52,6 +55,8 @@ Get-WindowsCapability -Name RSAT* -Online | Add-WindowsCapability -Online
 ```
 11. Configure Termianl as default console & automatically launch PowerShell 7
 
-
-
+# PowerShell Modules
+1. PSReadLine
+2. PSWriteHTML
+3. GPOZaurr
    
